@@ -3,15 +3,12 @@ import * as Tone from "tone";
 export default function playNote(note, e) {
   if (e !== undefined) e.stopPropagation();
 
-  if (note === "" && e) {
-    console.log(e);
-  }
   const synth = new Tone.Synth();
   synth.oscillator.type = "sine";
   synth.toDestination();
   const now = Tone.now();
 
-  switch (note) {
+  switch (note.toLowerCase()) {
     case "d":
       return synth.triggerAttackRelease("C4", "8n", now);
     case "r":
