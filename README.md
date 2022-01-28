@@ -6,6 +6,7 @@ Esse é um projeto de teste criado com [JavaScript](https://www.javascript.com/)
 Após dar pull no projeto podemos iniciar o servidor de desenvolvimento com:
 
 ```bash
+npm install
 npm run dev
 ```
 
